@@ -30,7 +30,22 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <script src="../js/main.js" type="text/javascript"></script>
+    <script src="../js/script.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-43981329-1']);
+    _gaq.push(['_trackPageview']);
+    (function () {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
   </head>
 
   <body>
@@ -54,72 +69,174 @@
 
      <div class="col-md-2" style="margin-top: 50px">
       <div class="thumbnail">
-        <div class="col-md-12" style="display: block;">
-          <input id="search01" type="file" name="search">
-        </div>
-        <div class="col-md-12">
-          <img src="../images/icons/image.png" alt="defaultImage" style="width:100%">
-        </div>
-        <div class="caption">
-          <input type="submit" name="añadir">
+        <form id="uploadimage" action="" method="post" enctype="multipart/form-data">
+        <div id="image_preview">
+        <img id="previewing01" src="../images/icons/noimage.png" style="width:100%"/>
+        <script>
+          var loadFile1 = function(event) {
+          var output = document.getElementById('previewing01');
+          output.src = URL.createObjectURL(event.target.files[0]);
+          };
+        </script>
         </div> 
+        <hr id="line">    
+      <div id="selectImage">
+        <label>Select Your Image</label><br/>
+        <input type="file" name="file01" id="file01" accept="image/*" onchange="loadFile1(event)"/>
+
+      </div>  
+
+      <div id="selectImage">
+        <label>Select Your Audio</label><br/>
+        <input type="file" name="file07" id="file07" accept=".mp3"/>
+      </div>                 
+      </form>   
+        
       </div>
     </div>
 
     <div class="col-md-2" style="margin-top: 50px">
       <div class="thumbnail">
-        <a href="pages/admin.html" target="_blank">
-          <img src="../images/cinderella/cinderella02.jpg" alt="admin" style="width:100%">
-          <div class="caption" style="text-align: center;">
-            <p>ADMINISTRADOR</p>
-          </div>
-        </a>
+        <form id="uploadimage" action="" method="post" enctype="multipart/form-data">
+        <div id="image_preview">
+        <img id="previewing02" src="../images/icons/noimage.png" style="width:100%"/>
+        <script>
+          var loadFile2 = function(event) {
+          var output = document.getElementById('previewing02');
+          output.src = URL.createObjectURL(event.target.files[0]);
+          };
+        </script>
+        </div> 
+        <hr id="line">    
+      <div id="selectImage">
+        <label>Select Your Image</label><br/>
+        <input type="file" name="file02" id="file02" accept="image/*" onchange="loadFile2(event)"/>
+
+      </div>
+
+      <div id="selectImage">
+        <label>Select Your Audio</label><br/>
+        <input type="file" name="file08" id="file08" accept=".mp3"/>
+      </div>                      
+      </form>   
+        
       </div>
     </div>
 
     <div class="col-md-2" style="margin-top: 50px">
       <div class="thumbnail">
-        <a href="pages/admin.html" target="_blank">
-          <img src="../images/cinderella/cinderella03.jpg" alt="admin" style="width:100%">
-          <div class="caption" style="text-align: center;">
-            <p>ADMINISTRADOR</p>
-          </div>
-        </a>
+        <form id="uploadimage" action="" method="post" enctype="multipart/form-data">
+        <div id="image_preview">
+        <img id="previewing03" src="../images/icons/noimage.png" style="width:100%"/>
+        <script>
+          var loadFile3 = function(event) {
+          var output = document.getElementById('previewing03');
+          output.src = URL.createObjectURL(event.target.files[0]);
+          };
+        </script>
+        </div> 
+        <hr id="line">    
+      <div id="selectImage">
+        <label>Select Your Image</label><br/>
+        <input type="file" name="file03" id="file03" accept="image/*" onchange="loadFile3(event)"/>
+
+      </div> 
+
+      <div id="selectImage">
+        <label>Select Your Audio</label><br/>
+        <input type="file" name="file09" id="file09" accept=".mp3"/>
+      </div>                     
+      </form>   
+        
+      </div>
+    </div>
+
+<div class="col-md-2" style="margin-top: 50px">
+      <div class="thumbnail">
+        <form id="uploadimage" action="" method="post" enctype="multipart/form-data">
+        <div id="image_preview">
+        <img id="previewing04" src="../images/icons/noimage.png" style="width:100%"/>
+        <script>
+          var loadFile4 = function(event) {
+          var output = document.getElementById('previewing04');
+          output.src = URL.createObjectURL(event.target.files[0]);
+          };
+        </script>
+        </div> 
+        <hr id="line">    
+      <div id="selectImage">
+        <label>Select Your Image</label><br/>
+        <input type="file" name="file04" id="file04" accept="image/*" onchange="loadFile4(event)"/>
+
+            </div>   
+
+            <div id="selectImage">
+        <label>Select Your Audio</label><br/>
+        <input type="file" name="file10" id="file10" accept=".mp3"/>
+      </div>                   
+      </form>   
+        
       </div>
     </div>
 
     <div class="col-md-2" style="margin-top: 50px">
       <div class="thumbnail">
-        <a href="pages/usuario.html" target="_blank">
-          <img src="../images/cinderella/cinderella04.jpg" alt="admin" style="width:100%">
-          <div class="caption" style="text-align: center;">
-            <p>USUARIO</p>
-          </div>
-        </a>
+        <form id="uploadimage" action="" method="post" enctype="multipart/form-data">
+        <div id="image_preview">
+        <img id="previewing05" src="../images/icons/noimage.png" style="width:100%"/>
+        <script>
+          var loadFile5 = function(event) {
+          var output = document.getElementById('previewing05');
+          output.src = URL.createObjectURL(event.target.files[0]);
+          };
+        </script>
+        </div> 
+        <hr id="line">    
+      <div id="selectImage">
+        <label>Select Your Image</label><br/>
+        <input type="file" name="file05" id="file05" accept="image/*" onchange="loadFile5(event)"/>
+
+            </div>    
+
+            <div id="selectImage">
+        <label>Select Your Audio</label><br/>
+        <input type="file" name="file11" id="file11" accept=".mp3"/>
+      </div>                  
+      </form>   
+        
       </div>
     </div>
 
     <div class="col-md-2" style="margin-top: 50px">
       <div class="thumbnail">
-        <a href="pages/usuario.html" target="_blank">
-          <img src="../images/cinderella/cinderella05.jpeg" alt="admin" style="width:100%">
-          <div class="caption" style="text-align: center;">
-            <p>USUARIO</p>
-          </div>
-        </a>
+        <form id="uploadimage" action="" method="post" enctype="multipart/form-data">
+        <div id="image_preview">
+        <img id="previewing06" src="../images/icons/noimage.png" style="width:100%"/>
+        <script>
+          var loadFile6 = function(event) {
+          var output = document.getElementById('previewing06');
+          output.src = URL.createObjectURL(event.target.files[0]);
+          };
+        </script>
+        </div> 
+        <hr id="line">    
+      <div id="selectImage">
+        <label>Select Your Image</label><br/>
+        <input type="file" name="file06" id="file06" accept="image/*" onchange="loadFile6(event)"/>
+
+            </div>  
+
+            <div id="selectImage">
+        <label>Select Your Audio</label><br/>
+        <input type="file" name="file12" id="file12" accept=".mp3"/>
+      </div>                    
+      </form>   
+        
       </div>
     </div>
 
-    <div class="col-md-2" style="margin-top: 50px">
-      <div class="thumbnail">
-        <a href="pages/usuario.html" target="_blank">
-          <img src="../images/cinderella/cinderella06.jpeg" alt="admin" style="width:100%">
-          <div class="caption" style="text-align: center;">
-            <p>USUARIO</p>
-          </div>
-        </a>
-      </div>
-    </div>
+
+   
 
     </div><!-- /.container -->
 
