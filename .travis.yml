@@ -5,7 +5,9 @@ node_js:
   - 0.6
   - 0.8
 
-# configure notifications (email, IRC, campfire etc)
-# please update this section to your needs!
 notifications:
-  irc: "irc.freenode.org#travis"
+ email:
+ - isamaleo@espol.edu.ec
+ on_success: never
+ on_failure: always
+
